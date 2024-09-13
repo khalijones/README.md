@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Seller</title>
+    <style>
+        body {
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .seller-form {
+            text-align: center;
+        }
+
+        .seller-form h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .seller-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .seller-form input[type="text"],
+        .seller-form input[type="email"],
+        .seller-form input[type="phone"],
+        .seller-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .seller-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .seller-form input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .seller-form input[type="submit"]:hover {
+            background-color: #218838; 
+        }
+
+        .seller-form p {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .seller-form a {
+            color: #007bff; 
+            text-decoration: none;
+        }
+
+        .seller-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="seller-form">
+            <h2>Become a Seller</h2>
+            <form>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="phone" id="phone" name="phone" required><br>
+
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business-name" required><br>
+
+                <label for="business-description">Business Description:</label>
+                <textarea id="business-description" name="business-description" required></textarea><br>
+
+                <input type="submit" value="Apply Now">
+            </form>
+            <p>Already a seller? <a href="my account.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>

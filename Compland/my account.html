@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compland Login</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .input-field {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      background-color: #ff9800;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff7f00;
+    }
+
+    .fb-login {
+      background-color: #3b5998;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .fb-login:hover {
+      background-color: #29487d;
+    }
+
+    .fb-icon {
+      margin-right: 10px;
+      font-size: 20px;
+      vertical-align: middle;
+    }
+
+    .terms {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .terms a {
+      color: #ff9800;
+      text-decoration: none;
+    }
+
+    .terms a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Compland </h1>
+    <p>Type your e-mail or phone number to log in or create a Complands account.</p>
+    <div class="input-field">
+      <label for="email">Email or Mobile Number*</label>
+      <input type="text" id="email" placeholder="Please fill out this field.">
+    </div>
+    <button class="btn">Continue</button>
+    <div class="terms">
+      By continuing you agree to Complands <a href="#">Terms and Conditions</a>
+    </div>
+    <button class="fb-login">
+      <i class="fb-icon">f</i> Log in with Facebook
+    </button>
+  </div>
+</body>
+</html>

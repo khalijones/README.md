@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .product-title {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            margin: 10px 0;
+        }
+
+        .current-price {
+            font-size: 18px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .original-price {
+            font-size: 14px;
+            color: #777;
+            text-decoration: line-through;
+            margin-left: 5px;
+        }
+
+        .color-options {
+            margin: 10px 0;
+        }
+
+        .color {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            cursor: pointer;
+            
+        }
+
+        .color.red { background-color: red; }
+        .color.black { background-color: black; }
+        .color.orange { background-color: orange; }
+        .color.dark-green { background-color: darkgreen; }
+
+        .choose-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .choose-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="product-image" id="productImage">
+        <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+        <div class="product-price">
+            <span class="current-price">KSh. 39,999</span>
+            <span class="original-price">KSh. 45,000</span>
+        </div>
+        <div class="color-options">
+            <span class="color red" data-image="https://via.placeholder.com/150/ff0000"></span>
+            <span class="color black" data-image="https://via.placeholder.com/150/000000"></span>
+            <span class="color orange" data-image="https://via.placeholder.com/150/ffa500"></span>
+            <span class="color dark-green" data-image="https://via.placeholder.com/150/006400"></span>
+        </div>
+        <button class="choose-button">Choose options</button>
+    </div>
+
+    <script>
+        
+        const colorOptions = document.querySelectorAll('.color');
+        const productImage = document.getElementById('productImage');
+
+        colorOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const newImageSrc = this.getAttribute('data-image');
+                productImage.src = newImageSrc;
+            });
+        });
+
+        document.querySelector('.choose-button').addEventListener('click', function() {
+            alert('Choose options clicked!');
+        });
+    </script>
+</body>
+</html>
+

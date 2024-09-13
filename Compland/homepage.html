@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compland Shop</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header class="top-header">
+        <div>
+            <div class="text">Free Delivery on Orders KES 30,000+</div>
+            <div class="subscribe-button-container">
+                <button class="subscribe-button">
+                    <button><span class="envelope-icon">✉️</span> Subscribe & Save</button>
+                </button>
+            </div>
+            
+    </header>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <h1>complandshop<span class="tag">.com</span></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Click to search over 1 million products...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="user-options">
+            <a href="login.html">Login </a>
+                <a href="signup.html">Signup</a>
+            <a href="my account.html">My Account</a>
+            <div class="cart-section">
+                <div class="cart">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                    <span class="cart-text">cart</span>
+                    <script>
+                        let cartCount = 0;
+                
+                        function addToCart() {
+                            cartCount++;
+                            document.getElementById('cart-count').textContent = cartCount;
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+        <nav class="navbar">
+            <div class="nav-left">
+                <b><a href="#">All Categories</a></b>
+                <b><a href="#">Best Sellers</a></b>
+                <b><a href="#">Trending</a></b>
+                <a href="#">Electronics</a>
+                <a href="#">Health & Beauty</a>
+            </div>
+            <div class="nav-right">
+                <img src="deals.png">Deals</a>
+                <img src="express.png">Express</a>
+                <img src="business.png">Business</a>
+                <a href="become a seller.html" class="btn">Become a Seller</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-image">
+            <img src="power.png" alt="TCL Banner">
+        </div>
+    </section>
+    <div class="container">
+        <a href="#" class="button">
+          <span style="font-size: 12px;">⭐</span>
+          Top Deals in Electronics
+        </a>
+        <a href="#" class="text">View all</a>
+      </div>
+   
+        <div class="product-list">
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        
+<div class="product-card">
+    <img src="tcl.jpg.png" alt="TCL P635 43 Smart Television" class="product-image">
+    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+    <div class="price-section">
+        <span class="current-price">KSh. 39,999</span>
+        <span class="old-price">KSh. 45,000</span>
+    </div>
+    <div class="color-options">
+        <span class="color red" data-image="https://via.placeholder.com/150/ff0000"></span>
+        <span class="color black" data-image="https://via.placeholder.com/150/000000"></span>
+        <span class="color orange" data-image="https://via.placeholder.com/150/ffa500"></span>
+        <span class="color dark-green" data-image="https://via.placeholder.com/150/006400"></span>
+    </div>
+    <button class="choose-button">Choose options</button>
+    <script>
+        // JavaScript to change product image based on color selection
+        const colorOptions = document.querySelectorAll('.color');
+        const productImage = document.getElementById('productImage');
+
+        colorOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const newImageSrc = this.getAttribute('data-image');
+                productImage.src = newImageSrc;
+            });
+        });
+
+        document.querySelector('.choose-button').addEventListener('click', function() {
+            alert('Choose options clicked!');
+        });
+    </script>
+            </div>
+            <div class="product-card">
+                <img src="tcl3.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl4.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <img src="half phone.png">
+      </section>
+      <section class="deals">
+        <div class="product-grid">
+            <div class="product">
+                <img src="earpods.png">
+            
+            </div>
+            <div class="product">
+                <img src="fullphone.png">
+            
+            </div>
+            <div class="product">
+                <img src="smartwatch.png">
+              
+            </div>
+            <div class="product">
+                <img src="phone.png">
+             
+            </div>
+        </div>
+      </section>
+      <section class="top-deals">
+        <div class="top-deals-header">
+            <b><h2>Best Selling in Mobiles & Accessories</h2></b>
+            <a href="#">View all</a>
+        </div>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="TCL P635 43 Smart Television" class="product-image">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <div class="price-section">
+                    <span class="current-price">KSh. 39,999</span>
+                    <span class="old-price">KSh. 45,000</span>
+                </div>
+                <div class="color-options">
+                    <span class="color red" data-image="https://via.placeholder.com/150/ff0000"></span>
+                    <span class="color black" data-image="https://via.placeholder.com/150/000000"></span>
+                    <span class="color orange" data-image="https://via.placeholder.com/150/ffa500"></span>
+                    <span class="color dark-green" data-image="https://via.placeholder.com/150/006400"></span>
+                </div>
+                <button class="choose-button">Choose options</button>
+                <script>
+                  
+                    const colorOptions = document.querySelectorAll('.color');
+                    const productImage = document.getElementById('productImage');
+            
+                    colorOptions.forEach(option => {
+                        option.addEventListener('click', function() {
+                            const newImageSrc = this.getAttribute('data-image');
+                            productImage.src = newImageSrc;
+                        });
+                    });
+            
+                  
+                    document.querySelector('.choose-button').addEventListener('click', function() {
+                        alert('Choose options clicked!');
+                    });
+                </script>
+                        </div>
+            <div class="product-card">
+                <img src="tcl3.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl4.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <img src="speaker.png">
+    </section>
+    <section class="deals">
+        <div class="product-grid">
+            <div class="product">
+                <img src="speaker2.png">
+            
+            </div>
+            <div class="product">
+                <img src="speaker3.png">
+            
+            </div>
+            <div class="product">
+                <img src="speaker4.png">
+              
+            </div>
+            <div class="product">
+                <img src="laptop.png">
+             
+            </div>
+        </div>
+    </section>
+    <section class="top-deals">
+        <div class="top-deals-header">
+            <b><h2>Best Selling in Desktops & Laptops</h2></b>
+            <a href="#">View all</a>
+        </div>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="TCL P635 43 Smart Television" class="product-image">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <div class="price-section">
+                    <span class="current-price">KSh. 39,999</span>
+                    <span class="old-price">KSh. 45,000</span>
+                </div>
+                <div class="color-options">
+                    <span class="color red" data-image="https://via.placeholder.com/150/ff0000"></span>
+                    <span class="color black" data-image="https://via.placeholder.com/150/000000"></span>
+                    <span class="color orange" data-image="https://via.placeholder.com/150/ffa500"></span>
+                    <span class="color dark-green" data-image="https://via.placeholder.com/150/006400"></span>
+                </div>
+                <button class="choose-button">Choose options</button>
+                <script>
+                 
+                    const colorOptions = document.querySelectorAll('.color');
+                    const productImage = document.getElementById('productImage');
+            
+                    colorOptions.forEach(option => {
+                        option.addEventListener('click', function() {
+                            const newImageSrc = this.getAttribute('data-image');
+                            productImage.src = newImageSrc;
+                        });
+                    });
+            
+                  
+                    document.querySelector('.choose-button').addEventListener('click', function() {
+                        alert('Choose options clicked!');
+                    });
+                </script>
+               
+                        </div>
+           
+            <div class="product-card">
+                <img src="tcl3.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl4.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <img src="speaker.png">
+    </section>
+    <section class="deals">
+        <div class="product-grid">
+            <div class="product">
+                <img src="speaker2.png">
+            
+            </div>
+            <div class="product">
+                <img src="speaker3.png">
+            
+            </div>
+            <div class="product">
+                <img src="speaker4.png">
+              
+            </div>
+            <div class="product">
+                <img src="laptop.png">
+             
+            </div>
+        </div>
+    </section>
+    <section class="top-deals">
+        <div class="top-deals-header">
+            <b><h2>Best Selling in Audio</h2></b>
+            <a href="#">View all</a>
+        </div>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="TCL P635 43 Smart Television" class="product-image">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <div class="price-section">
+                    <span class="current-price">KSh. 39,999</span>
+                    <span class="old-price">KSh. 45,000</span>
+                </div>
+                <div class="color-options">
+                    <span class="color red" data-image="https://via.placeholder.com/150/ff0000"></span>
+                    <span class="color black" data-image="https://via.placeholder.com/150/000000"></span>
+                    <span class="color orange" data-image="https://via.placeholder.com/150/ffa500"></span>
+                    <span class="color dark-green" data-image="https://via.placeholder.com/150/006400"></span>
+                </div>
+                <button class="choose-button">Choose options</button>
+                <script>
+                  
+                    const colorOptions = document.querySelectorAll('.color');
+                    const productImage = document.getElementById('productImage');
+            
+                    colorOptions.forEach(option => {
+                        option.addEventListener('click', function() {
+                            const newImageSrc = this.getAttribute('data-image');
+                            productImage.src = newImageSrc;
+                        });
+                    });
+            
+                    document.querySelector('.choose-button').addEventListener('click', function() {
+                        alert('Choose options clicked!');
+                    });
+                </script>
+                        
+            </div>
+            <div class="product-card">
+                <img src="tcl3.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl4.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <img src="speaker.png">
+    </section>
+    <section class="deals">
+        <div class="product-grid">
+            <div class="product">
+                <img src="speaker2.png">
+            
+            </div>
+            <div class="product">
+                <img src="speaker3.png">
+            
+            </div>
+            <div class="product">
+                <img src="speaker4.png">
+              
+            </div>
+            <div class="product">
+                <img src="laptop.png">
+             
+            </div>
+        </div>
+    </section>
+    <section class="top-deals">
+        <div class="top-deals-header">
+            <b><h2>Best Selling in Televisions & Displays</h2></b>
+            <a href="#">View all</a>
+        </div>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl.jpg.png" alt="TCL P635 43 Smart Television" class="product-image">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <div class="price-section">
+                    <span class="current-price">KSh. 39,999</span>
+                    <span class="old-price">KSh. 45,000</span>
+                </div>
+                <div class="color-options">
+                    <span class="color red" data-image="https://via.placeholder.com/150/ff0000"></span>
+                    <span class="color black" data-image="https://via.placeholder.com/150/000000"></span>
+                    <span class="color orange" data-image="https://via.placeholder.com/150/ffa500"></span>
+                    <span class="color dark-green" data-image="https://via.placeholder.com/150/006400"></span>
+                </div>
+                <button class="choose-button">Choose options</button>
+                <script>
+                   
+                    const colorOptions = document.querySelectorAll('.color');
+                    const productImage = document.getElementById('productImage');
+            
+                    colorOptions.forEach(option => {
+                        option.addEventListener('click', function() {
+                            const newImageSrc = this.getAttribute('data-image');
+                            productImage.src = newImageSrc;
+                        });
+                    });
+            
+                  
+                    document.querySelector('.choose-button').addEventListener('click', function() {
+                        alert('Choose options clicked!');
+                    });
+                </script>
+                        
+            </div>
+            <div class="product-card">
+                <img src="tcl3.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl2.jpg.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tcl4.png" alt="Product Image">
+                <div class="product-info">
+                    <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                    <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <img src="speaker.png">
+    </section>
+    <section class="deals">
+        <div class="product-grid">
+            <div class="product">
+                <img src="speaker2.png">
+            
+            </div>
+            <div class="product">
+                <img src="speaker3.png">
+            
+            </div>
+            <div class="product">
+                <img src="speaker4.png">
+              
+            </div>
+            <div class="product">
+                <img src="laptop.png">
+             
+            </div>
+        </div>
+    </section>
+    <div class="product-list">
+        <div class="product-card">
+            <img src="tcl.jpg.png" alt="Product Image">
+            <div class="product-info">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                <button onclick="addToCart()">Add to Cart</button>
+            
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="tcl2.jpg.png" alt="Product Image">
+            <div class="product-info">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    
+<div class="product-card">
+<img src="tcl.jpg.png" alt="TCL P635 43 Smart Television" class="product-image">
+<h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+<div class="price-section">
+    <span class="current-price">KSh. 39,999</span>
+    <span class="old-price">KSh. 45,000</span>
+</div>
+<div class="color-options">
+    <span class="color red" data-image="https://via.placeholder.com/150/ff0000"></span>
+    <span class="color black" data-image="https://via.placeholder.com/150/000000"></span>
+    <span class="color orange" data-image="https://via.placeholder.com/150/ffa500"></span>
+    <span class="color dark-green" data-image="https://via.placeholder.com/150/006400"></span>
+</div>
+<button class="choose-button">Choose options</button>
+<script>
+   
+    const colorOptions = document.querySelectorAll('.color');
+    const productImage = document.getElementById('productImage');
+
+    colorOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const newImageSrc = this.getAttribute('data-image');
+            productImage.src = newImageSrc;
+        });
+    });
+
+   
+    document.querySelector('.choose-button').addEventListener('click', function() {
+        alert('Choose options clicked!');
+    });
+</script>
+        </div>
+        <div class="product-card">
+            <img src="tcl3.jpg.png" alt="Product Image">
+            <div class="product-info">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="tcl2.jpg.png" alt="Product Image">
+            <div class="product-info">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="tcl4.png" alt="Product Image">
+            <div class="product-info">
+                <h2 class="product-title">TCL P635 43" Smart Television 2X HDMI, Google TV...</h2>
+                <p class="price">KSh. 39,999 <span class="old-price">KSh. 45,000</span></p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Compland Shop</h2>
+                <p>We strive to perfect the e-commerce buying experience by providing the best customer service and one of the lowest prices to our customers. Our customers buy from us knowing that they will be paying one of the lowest prices, with a full 30-day return and replacement policy.</p>
+            </div>
+            <div class="footer-section policies">
+                <h2>Policies</h2>
+                <ul>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section information">
+                <h2>Information</h2>
+                <ul>
+                    <li><a href="#">Mobile App</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Reviews & Awards</a></li>
+                    <li><a href="#">Returns/Exchanges</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h2>Newsletter</h2>
+                <p>Sign up to get access to savings of up to 90% OFF.</p>
+                <form action="#">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>COPYRIGHT 2024 COMPLAND SHOP.</p>
+            <div class="social-icons">
+                <P>Follow Us</P><br>
+                <a href="#"><img src="linkendin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

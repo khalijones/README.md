@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Search Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            width: 200px;
+            box-sizing: border-box;
+            margin-right: -5px;
+        }
+
+        .search-button {
+            background-color: #007bff; 
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px; 
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-button:hover {
+            background-color: #0056b3; 
+        }
+
+        .search-button:focus {
+            outline: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">
+            🔍
+        </button>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navigation Bar with Dropdown</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-left">
+            <li class="dropdown">
+                <a href="#" class="dropbtn">All Categories</a>
+                <div class="dropdown-content">
+                    <a href="#">Category 1</a>
+                    <a href="#">Category 2</a>
+                    <a href="#">Category 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Best Sellers</a>
+                <div class="dropdown-content">
+                    <a href="#">Best Seller 1</a>
+                    <a href="#">Best Seller 2</a>
+                    <a href="#">Best Seller 3</a>
+                </div>
+            </li>
+            <li><a href="#">Trending</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Electronics</a>
+                <div class="dropdown-content">
+                    <a href="#">Electronics 1</a>
+                    <a href="#">Electronics 2</a>
+                    <a href="#">Electronics 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Health & Beauty</a>
+                <div class="dropdown-content">
+                    <a href="#">Health Product 1</a>
+                    <a href="#">Beauty Product 2</a>
+                    <a href="#">Beauty Product 3</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav-right">
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Express</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#" class="seller-btn">Become a Seller</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
